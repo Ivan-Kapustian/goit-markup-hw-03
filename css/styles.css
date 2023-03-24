@@ -164,9 +164,6 @@ body {
   padding-bottom: 120px;
   gap: 24px;
 }
-
-.hiden-h {
-}
 .title {
   font-weight: 500;
   font-size: 20px;
@@ -286,7 +283,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text);
 }
-.box {
+.card {
   border: 1px solid var(--border);
   background: var(--white);
 }
