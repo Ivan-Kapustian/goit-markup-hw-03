@@ -5,6 +5,7 @@
   --white: #fff;
   --iris: #4d5ae5;
   --secondary-white: #f4f4fd;
+  --border: #e7e9fc;
 }
 *,
 *::before,
@@ -54,7 +55,7 @@ body {
 }
 .header {
   background-color: var(--white);
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--border);
 }
 .navi {
   display: flex;
@@ -144,9 +145,10 @@ body {
   margin-right: auto;
   padding: 16px 32px;
   color: var(--white);
-  background: var(--iris);
+  background-color: var(--iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: transparent;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -253,7 +255,7 @@ body {
   gap: 24px;
 }
 .btn-portfolio {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border);
   border-radius: 4px;
   padding: 12px 24px;
   color: var(--iris);
@@ -285,7 +287,7 @@ body {
   color: var(--secondary-text);
 }
 .box {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border);
   background: var(--white);
 }
 .portfolio-text {
