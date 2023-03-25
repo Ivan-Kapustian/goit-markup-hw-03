@@ -50,7 +50,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1188px;
+  width: 1158px;
   padding: 0 15px;
 }
 .header {
@@ -62,24 +62,33 @@ body {
 }
 .navigation {
   display: flex;
-  padding: 24px 0;
 }
 .nav-list {
   display: flex;
   gap: 40px;
   margin-left: 76px;
 }
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .list-contact {
   display: flex;
-  padding: 24px 0;
   gap: 40px;
 }
+.contact-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .adress {
-  padding: 24px 0;
   margin-left: auto;
 }
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -115,14 +124,13 @@ body {
 }
 .hero {
   background: var(--secondary-text);
-}
-.hero-div {
   padding-top: 188px;
-  padding-left: 341px;
-  padding-right: 341px;
   padding-bottom: 188px;
 }
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
   margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
@@ -154,16 +162,24 @@ body {
 .hero-btn:focus {
   background-color: var(--active-color);
 }
-
+.hiden-h {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+.main-div {
+  width: ;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .list-main {
   display: flex;
   gap: 24px;
 }
 .list-item {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  gap: 24px;
+  flex-basis: calc((100% - 72px) / 4);
 }
+
 .title {
   font-weight: 500;
   font-size: 20px;
@@ -182,7 +198,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   color: var(--secondary-text);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .explain-list {
   justify-content: center;
@@ -193,14 +209,21 @@ body {
 .team {
   background: var(--secondary-white);
 }
+.team-div {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .team-list {
   gap: 24px;
   display: flex;
-  padding-top: 120px;
   justify-content: center;
 }
+.team-card {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  text-align: center;
+}
 .team-main-title {
-  padding-top: 120px;
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
@@ -210,34 +233,30 @@ body {
   color: var(--secondary-text);
 }
 .team-title {
-  padding-bottom: 8px;
-  padding-top: 32px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-text);
 }
-.team-text {
-  padding-bottom: 32px;
-  text-align: center;
-}
 .team-item {
   background: var(--white);
-  margin-bottom: 120px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .footer {
   background: var(--secondary-text);
 }
-.footer-div {
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .footer-text {
   color: var(--secondary-white);
-  padding-top: 16px;
+  margin-top: 16px;
   width: 264px;
 }
 .studio-footer {
@@ -245,6 +264,7 @@ body {
 }
 .portf-div {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 .btn-list {
   display: flex;
@@ -262,12 +282,10 @@ body {
 .btn-portfolio:focus {
   background: var(--active-color);
   color: var(--white);
-}
-.card-div {
-  padding-top: 72px;
-  padding-bottom: 120px;
+  border: transparent;
 }
 .portfolio-list {
+  margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -275,8 +293,6 @@ body {
   flex-basis: calc(100% / 3);
 }
 .portfolio-title {
-  padding-left: 16px;
-  padding-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -284,13 +300,15 @@ body {
   color: var(--secondary-text);
 }
 .card {
-  border: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   background: var(--white);
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .portfolio-text {
-  padding-left: 16px;
-  padding-bottom: 32px;
-  padding-top: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;

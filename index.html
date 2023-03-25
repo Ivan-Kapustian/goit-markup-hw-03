@@ -27,7 +27,9 @@
             <li class="link">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="link"><a class="nav-link link" href="">Contacts</a></li>
+            <li class="link">
+              <a class="nav-link link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
 
@@ -57,40 +59,42 @@
 
       <section>
         <div class="container">
-          <h2 hidden class="hiden-h">hiden title</h2>
-          <ul class="list-main">
-            <li class="list-item">
-              <h3 class="title">Strategy</h3>
-              <p class="hero-dscr">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="list-item">
-              <h3 class="title">Punctuality</h3>
-              <p class="hero-dscr">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="list-item">
-              <h3 class="title">Diligence</h3>
-              <p class="hero-dscr">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="list-item">
-              <h3 class="title">Technologies</h3>
-              <p class="hero-dscr">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
+          <h2 class="hiden-h">hiden title</h2>
+          <div class="main-div">
+            <ul class="list-main">
+              <li class="list-item">
+                <h3 class="title">Strategy</h3>
+                <p class="hero-dscr">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
+              <li class="list-item">
+                <h3 class="title">Punctuality</h3>
+                <p class="hero-dscr">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </li>
+              <li class="list-item">
+                <h3 class="title">Diligence</h3>
+                <p class="hero-dscr">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
+              <li class="list-item">
+                <h3 class="title">Technologies</h3>
+                <p class="hero-dscr">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="explain">
+      <section>
         <div class="container explain-div">
           <h2 class="explain-title">What are we doing</h2>
           <ul class="explain-list">
@@ -115,7 +119,7 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team-div">
           <h2 class="team-main-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -124,13 +128,17 @@
                 alt="Mark Guerrero photo"
                 width="264"
               />
-              <h3 class="team-title">Mark Guerrero</h3>
-              <p class="team-text">Product Designer</p>
+              <div class="team-card">
+                <h3 class="team-title">Mark Guerrero</h3>
+                <p class="team-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/img-2.jpg" alt="Tom Ford photo" width="264" />
-              <h3 class="team-title">Tom Ford</h3>
-              <p class="team-text">Frontend Developer</p>
+              <div class="team-card">
+                <h3 class="team-title">Tom Ford</h3>
+                <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -138,8 +146,10 @@
                 alt="Camila Garcia photo"
                 width="264"
               />
-              <h3 class="team-title">Camila Garcia</h3>
-              <p class="team-text">Marketing</p>
+              <div class="team-card">
+                <h3 class="team-title">Camila Garcia</h3>
+                <p class="team-text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -147,16 +157,17 @@
                 alt="Daniel Wilson photo"
                 width="264"
               />
-              <h3 class="team-title">Daniel Wilson</h3>
-
-              <p class="team-text">UI Designer</p>
+              <div class="team-card">
+                <h3 class="team-title">Daniel Wilson</h3>
+                <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-div">
+      <div class="container">
         <a href="./index.html" class="logo link"
           >Web<span class="studio-footer">Studio</span></a
         >
