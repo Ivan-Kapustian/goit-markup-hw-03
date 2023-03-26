@@ -87,8 +87,6 @@ body {
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -96,6 +94,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+}
+.logo-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-decoration: none;
+  cursor: pointer;
 }
 .studio {
   color: var(--secondary-text);
@@ -162,13 +166,19 @@ body {
 .hero-btn:focus {
   background-color: var(--active-color);
 }
-.hiden-h {
-  visibility: hidden;
-  pointer-events: none;
+.visually-hidden {
   position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
-.main-div {
-  width: ;
+.main {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -188,7 +198,7 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.explain-div {
+.explain {
   padding-bottom: 120px;
 }
 .explain-title {
@@ -207,11 +217,9 @@ body {
   padding-bottom: 120px;
 }
 .team {
-  background: var(--secondary-white);
-}
-.team-div {
   padding-top: 120px;
   padding-bottom: 120px;
+  background: var(--secondary-white);
 }
 .team-list {
   gap: 24px;
@@ -262,7 +270,7 @@ body {
 .studio-footer {
   color: var(--secondary-white);
 }
-.portf-div {
+.portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
